@@ -9,6 +9,7 @@ import { publicProvider } from 'wagmi/providers/public';
 const { chains, provider, webSocketProvider } = configureChains(
   [
     mainnet,
+    goerli,
     polygon,
     optimism,
     arbitrum,
@@ -18,7 +19,7 @@ const { chains, provider, webSocketProvider } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: 'RainbowKit App',
+  appName: 'Metadom',
   chains,
 });
 
